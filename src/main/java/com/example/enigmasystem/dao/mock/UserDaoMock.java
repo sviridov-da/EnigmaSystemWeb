@@ -3,11 +3,12 @@ package com.example.enigmasystem.dao.mock;
 import com.example.enigmasystem.dao.interfaces.UserDao;
 import com.example.enigmasystem.models.User;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+@Repository
 public class UserDaoMock implements UserDao {
     List<User> users = new ArrayList<>();
     public UserDaoMock(){
