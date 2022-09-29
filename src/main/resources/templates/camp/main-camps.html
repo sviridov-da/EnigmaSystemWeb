@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="camp/general-components/basic-head">
+</head>
+<body>
+<div class="container-fluid col-md-8 my-auto">
+    <div th:replace="camp/general-components/basic-nav">
+
+    </div>
+    <div id="all-camps-view" class="row"></div>
+</div>
+<div th:replace="camp/general-components/basic-scripts"></div>
+<script type="text/javascript" th:src="@{/js/camp/GetAllCamps.js}"></script>
+</body>
+</html>

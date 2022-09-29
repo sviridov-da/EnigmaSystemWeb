@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="camp/general-components/basic-head">
+</head>
+<body>
+<div id="content" class="container-fluid col-md-8 my-auto">
+    <div th:replace="camp/general-components/basic-nav"></div>
+    <h5 id="camp_title" class="title"></h5>
+    <h6 class="title">Список участвующих дивизионов</h6>
+    <table id="CampDataTable" class="table table-hover"></table>
+    <a href="/camps"><button class="btn btn-primary">На главную</button> </a>
+</div>
+<div th:replace="camp/general-components/basic-scripts"></div>
+<script type="text/javascript" th:src="@{/js/camp/ShowCamp.js}"></script>
+</body>
+</html>
